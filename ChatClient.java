@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package chatclient;
 
 import java.io.*;
@@ -36,6 +32,7 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 
+//NOTE: ALL CODE IS NOT GUARANTEED TO WORK. (I couldn't even try it in home because my shitty router doesn't want to portforward)
 public class ChatClient extends Application implements Runnable {
     
     static Thread t;
@@ -147,7 +144,7 @@ public class ChatClient extends Application implements Runnable {
             }
         });
         
-        //THIS IS THE CONNECT BUTTON. THIS CODE IS NOT USED.
+        //THIS IS THE CONNECT BUTTON. THIS CODE IS NOT USED. IDK WHY IT'S HERE
         connect.setOnAction(new EventHandler<ActionEvent>(){
         public void handle(ActionEvent e){
             if(//state.getText().equals("Connecting...") || 
